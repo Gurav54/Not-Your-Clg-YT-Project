@@ -58,3 +58,55 @@ for i in range(len(userString)):
     if userString[i] == 'a' or  userString[i] =='e' or userString[i] == 'i' or  userString[i] =='o' or userString[i]=='u' or userString[i] == 'A' or  userString[i] =='E' or userString[i] == 'I' or  userString[i] =='O' or userString[i]=='U':
 #### optimized version of chatgpt :if userString[i] in "aeiouAEIOU":
         print(f"in your string on this position {i} i found vovel and the vovel char is {userString[i]}")
+
+#Task 11: 
+# If number is grater then 0 print positive ,if number is less then zero print negetive if number is 0 print zero 
+
+num=int(input("ENTER YOUR NUMBER :-"))
+if num == 0:
+    print("zero")
+elif num > 0:
+    print("Positive")
+else:
+    print("negetive")
+
+#Task 12: Print only constants , remove vowels
+userInput=input("Enter your String to remove vowels and print only constants")
+for i in range(len(userInput)):
+    if userInput[i]  not in ("Aeiouaeiou"):
+        print(userInput[i])
+    
+    userInput = input("Enter your string: ")
+
+#Task 13 : # Break the loop where user sends his digit the loop should run upto 10
+digit=int(input("Enter the number :-"))
+for i in range(1,11):
+    if i == digit:
+        break
+    else:
+        print(i)
+
+#Task 14 : # write a program where loop runs upto 10 and skip 6
+
+skipdigit=int(input("Enter your skipping digit :-"))
+for i in range(1,11):
+    if i == skipdigit:
+        continue
+    print(i)
+
+#Task 15 : # write a program where loop runs upto 10 and skip 6
+
+skipdigit=int(input("Enter your skipping digit :-"))
+for i in range(1,11):
+    if i == skipdigit:
+        break
+    print(i)
+
+
+#Task 16 : Write a program that calculates and prints the total sum of all numbers from 1 to 5.
+# Expected Output: 15 (because 1 + 2 + 3 + 4 + 5 = 15). 
+userInput=int(input("Enter your number here :-"))
+total=0
+for i in range(1,userInput+1):
+    total=total+i
+print(total)
