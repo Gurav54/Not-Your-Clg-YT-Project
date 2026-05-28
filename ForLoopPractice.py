@@ -110,3 +110,46 @@ total=0
 for i in range(1,userInput+1):
     total=total+i
 print(total)
+
+#Task 17 : print both evenSum and oddsum 
+count=int(input("Enter your for loop range number:-"))
+evenSum=0
+oddSum=0
+for i in range(1,count+1):
+    if i%2==0:
+        evenSum=evenSum+i
+    else:
+        oddSum=oddSum+i
+print("evenSum ",evenSum)
+print("oddSum " ,oddSum)
+
+
+#Task 18 : find Factors of given number
+inputNum=int(input("Enter your Number for finding factor :-"))
+for i in range(1,inputNum+1):
+    if inputNum %i==0:
+        print(i)
+
+#Task 19 :perfect number
+userInput=int(input("Enter number:-"))
+temp=0
+for i in range(1,userInput):
+    if userInput % i  ==0:
+        temp=temp+i   
+
+if userInput == temp:
+    print("Perfect Number")
+else:
+    print("Not a perfect number")
+
+#Task 20 : prime number OR Composite number
+userInput= int(input("Enter your Number to find is it prime or not :-"))
+count=0
+for i in range(1,userInput+1):
+    if userInput % i ==0:
+        count=count +1
+
+if(count == 2):
+    print(" prime number")
+else:
+    print("composite number ")
