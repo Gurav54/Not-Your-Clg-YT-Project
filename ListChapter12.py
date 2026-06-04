@@ -95,3 +95,24 @@ print(listOfData)
 listFromClear=[11,22,33,44,55,77]
 listFromClear.clear()
 print(listFromClear)
+
+
+#SORT ()
+listdata=[1,33,2,4,22,322,8]
+# We can sort list in Asending order or in desending order as well
+# By default its Asending order , you can mention also but due to its default naturel we will get listdata in asending order 
+listdata.sort()
+print(f"sorted default list{listdata}")
+# sort list in desending order we have to pass parameter as reverse= True
+listdata.sort(reverse=True)
+print(f"sorted list in desending order ,reverse = True {listdata}")
+# sort list in Asending order using reverse=False
+listdata.sort(reverse=False)
+print(f"Asending order for list using reverse=False{listdata}")
+
+
+#REVERSE ()
+# When you want to reverse any data use reverse()
+listofdataa=[1,33,2221,12,112,3422]
+listofdataa.reverse()
+print(f"Normal reversed the list data {listofdataa}")
