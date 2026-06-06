@@ -18,7 +18,6 @@ sum=0
 mean=0.0
 for i in listForMean:
     sum=sum+i
-
 if sum >0:
     mean =sum / len(listForMean)
     print(mean)
@@ -57,16 +56,6 @@ for item in data:
 print(f"Max element is {maxElement} The index of the Max element is {index}")
 
 
-
-
-
-
-
-
-
-
-
-
 #Q4 find second largest element
 a = [100,440,50]
 
@@ -92,4 +81,48 @@ for i in range(len(listodfItems)-1):
 else:
      print("list is sorted")
 
+#Question 1: Count Even and Odd Numbers
+data = [1,2,3,4,5,7,8]
+evenSum =0
+oddsum=0
+if not data:
+    print("List is empty")
+else:
+    for i in data:
+        if i %2==0:
+            evenSum =evenSum+1
+        else:
+            oddsum=oddsum+1
+    print (f"even sum is = {evenSum} AND odd sum is ={oddsum}")
 
+#Question 2: Find the Smallest Element
+a = [45, 22, 98, 3, 76, 11, 55]
+smallestElement=a[0]
+if not a:
+    print("List is Empty")
+else:
+    for i in a:
+        if i < smallestElement:
+            smallestElement=i
+
+print(smallestElement)
+
+#Question 3: Show the dta in desc order 
+a = [10, 20, 30, 40, 50]
+if not a:
+    print("list is Empty")
+else:
+    a.sort(reverse=True)
+
+print(a)
+#------------------------------------------------------
+
+#Question 4: Count Occurrences of a Number
+a = [10, 20, 30,10, 40, 50,10,10]
+target=10
+count=0
+for i in range(len(a)):
+    if(target == a[i]):
+        count=count+1
+
+print(f"COUNT IS {count}")

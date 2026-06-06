@@ -22,8 +22,9 @@ print(fruits[0])
 print(fruits[-2])
 print(fruits[0:2])
 print(fruits[-3:-1]) # This is slicing where we started the slicing from mango upto Ornage so op : Mango and APPLE 
-#❌ Start on the right, end on the left
-print(fruits[-1:-3]) # WHY this list is getting empty [] because Python tries to move forward (default behavior), but -3 is behind Orange.Orange -> ??? (moving forward) It can never reach -3, so:
+#❌ Start on the right, end on the left THIS IS NOT POSSIABLE :-
+print(fruits[-1:-3]) # WHY this list is getting empty [] because Python tries
+#to move forward (default behavior), but -3 is behind Orange.Orange -> ??? (moving forward) It can never reach -3, so:
 # BELOW IS THE SOLUTION FOR ABOVE EMPTY LIST 
 print(fruits[-1:-3:-1]) # WE HAVE specifed that you have to walk backword -1 
 
